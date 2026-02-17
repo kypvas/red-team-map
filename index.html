@@ -102,7 +102,7 @@
 
 <!-- ==================== MAIN SVG ARCHITECTURE DIAGRAM ==================== -->
 <div class="svg-container">
-<svg viewBox="0 0 1400 980" width="1400" height="980" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1440 980" width="1440" height="980" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#ef4444" opacity="0.7"/></marker>
     <marker id="arrowG" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#10b981" opacity="0.7"/></marker>
@@ -118,8 +118,8 @@
   <rect x="420" y="40" width="200" height="920" rx="12" fill="#0f1729" stroke="#7f1d1d" stroke-width="1" opacity="0.5"/>
   <rect x="630" y="40" width="200" height="920" rx="12" fill="#0f1729" stroke="#164e63" stroke-width="1" opacity="0.6"/>
   <rect x="840" y="40" width="190" height="920" rx="12" fill="#111827" stroke="#1e2d3d" stroke-width="1" opacity="0.5"/>
-  <rect x="1040" y="40" width="180" height="920" rx="12" fill="#0f1729" stroke="#831843" stroke-width="1" opacity="0.5"/>
-  <rect x="1230" y="40" width="160" height="920" rx="12" fill="#0f1729" stroke="#7f1d1d" stroke-width="1" opacity="0.5"/>
+  <rect x="1040" y="40" width="190" height="920" rx="12" fill="#0f1729" stroke="#831843" stroke-width="1" opacity="0.5"/>
+  <rect x="1240" y="40" width="190" height="920" rx="12" fill="#0f1729" stroke="#7f1d1d" stroke-width="1" opacity="0.5"/>
 
   <!-- Zone labels -->
   <text x="100" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#3b82f6" font-weight="600" letter-spacing="1.5">INFRASTRUCTURE</text>
@@ -127,8 +127,8 @@
   <text x="520" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#ef4444" font-weight="600" letter-spacing="1.5">EXECUTION</text>
   <text x="730" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#8b5cf6" font-weight="600" letter-spacing="1.5">EVASION</text>
   <text x="935" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#06b6d4" font-weight="600" letter-spacing="1.5">LATERAL / PERSIST</text>
-  <text x="1127" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#ec4899" font-weight="600" letter-spacing="1.5">COLLECTION</text>
-  <text x="1315" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#f59e0b" font-weight="600" letter-spacing="1.5">EXFILTRATION</text>
+  <text x="1135" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#ec4899" font-weight="600" letter-spacing="1.5">COLLECTION</text>
+  <text x="1335" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#f59e0b" font-weight="600" letter-spacing="1.5">EXFILTRATION</text>
 
   <!-- INFRASTRUCTURE column -->
   <rect x="10" y="65" width="180" height="50" rx="8" fill="#1a2332" stroke="#3b82f6" stroke-width="1"/>
@@ -258,41 +258,41 @@
   <text x="935" y="558" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Signed EXE + malicious DLL</text>
 
   <!-- COLLECTION column -->
-  <rect x="1040" y="65" width="175" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
-  <text x="1127" y="86" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Keylogging</text>
-  <text x="1127" y="103" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">SetWindowsHookEx &bull; raw input</text>
-  <rect x="1040" y="130" width="175" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
-  <text x="1127" y="151" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Screen Capture</text>
-  <text x="1127" y="168" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">PrintWindow &bull; screenshots</text>
-  <rect x="1040" y="195" width="175" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
-  <text x="1127" y="216" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Credential Dump</text>
-  <text x="1127" y="233" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">LSASS &bull; SAM &bull; DPAPI &bull; Browser</text>
-  <rect x="1040" y="260" width="175" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
-  <text x="1127" y="281" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">File Discovery</text>
-  <text x="1127" y="298" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Shares &bull; Snaffler &bull; sensitive docs</text>
-  <rect x="1040" y="325" width="175" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
-  <text x="1127" y="346" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Email Harvest</text>
-  <text x="1127" y="363" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">MailSniper &bull; EWS &bull; Graph API</text>
-  <rect x="1040" y="390" width="175" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
-  <text x="1127" y="411" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Clipboard Monitor</text>
-  <text x="1127" y="428" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Passwords &bull; tokens &bull; MFA codes</text>
+  <rect x="1045" y="65" width="180" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
+  <text x="1135" y="86" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Keylogging</text>
+  <text x="1135" y="103" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">SetWindowsHookEx &bull; raw input</text>
+  <rect x="1045" y="130" width="180" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
+  <text x="1135" y="151" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Screen Capture</text>
+  <text x="1135" y="168" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">PrintWindow &bull; screenshots</text>
+  <rect x="1045" y="195" width="180" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
+  <text x="1135" y="216" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Credential Dump</text>
+  <text x="1135" y="233" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">LSASS &bull; SAM &bull; DPAPI &bull; Browser</text>
+  <rect x="1045" y="260" width="180" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
+  <text x="1135" y="281" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">File Discovery</text>
+  <text x="1135" y="298" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Shares &bull; Snaffler &bull; sensitive docs</text>
+  <rect x="1045" y="325" width="180" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
+  <text x="1135" y="346" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Email Harvest</text>
+  <text x="1135" y="363" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">MailSniper &bull; EWS &bull; Graph API</text>
+  <rect x="1045" y="390" width="180" height="50" rx="8" fill="#1a2332" stroke="#ec4899" stroke-width="1"/>
+  <text x="1135" y="411" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Clipboard Monitor</text>
+  <text x="1135" y="428" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Passwords &bull; tokens &bull; MFA codes</text>
 
   <!-- EXFILTRATION column -->
-  <rect x="1230" y="65" width="170" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
-  <text x="1315" y="86" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">HTTPS C2</text>
-  <text x="1315" y="103" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Blend with normal traffic</text>
-  <rect x="1230" y="130" width="170" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
-  <text x="1315" y="151" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">DNS Exfil</text>
-  <text x="1315" y="168" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">dnscat2 &bull; iodine &bull; TXT records</text>
-  <rect x="1230" y="195" width="170" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
-  <text x="1315" y="216" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Cloud Storage</text>
-  <text x="1315" y="233" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">OneDrive &bull; GDrive &bull; Dropbox</text>
-  <rect x="1230" y="260" width="170" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
-  <text x="1315" y="281" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Staging &amp; Chunking</text>
-  <text x="1315" y="298" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Compress &bull; Encrypt &bull; Split</text>
-  <rect x="1230" y="325" width="170" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
-  <text x="1315" y="346" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">SMB / WebDAV</text>
-  <text x="1315" y="363" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Internal staging &bull; share exfil</text>
+  <rect x="1245" y="65" width="180" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1335" y="86" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">HTTPS C2</text>
+  <text x="1335" y="103" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Blend with normal traffic</text>
+  <rect x="1245" y="130" width="180" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1335" y="151" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">DNS Exfil</text>
+  <text x="1335" y="168" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">dnscat2 &bull; iodine &bull; TXT records</text>
+  <rect x="1245" y="195" width="180" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1335" y="216" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Cloud Storage</text>
+  <text x="1335" y="233" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">OneDrive &bull; GDrive &bull; Dropbox</text>
+  <rect x="1245" y="260" width="180" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1335" y="281" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">Staging &amp; Chunking</text>
+  <text x="1335" y="298" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Compress &bull; Encrypt &bull; Split</text>
+  <rect x="1245" y="325" width="180" height="50" rx="8" fill="#1a2332" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1335" y="346" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f8fafc" font-weight="600">SMB / WebDAV</text>
+  <text x="1335" y="363" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#64748b">Internal staging &bull; share exfil</text>
 
   <!-- Connection arrows -->
   <line x1="190" y1="90" x2="220" y2="90" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowG)" opacity="0.5"/>
